@@ -1,12 +1,60 @@
 /* SECTION Elements & Other */
 
+@keyframes h1{
+  0% {transform: translateY(-100px)}
+  100% {transform: translateY(0px);}
+}
+
+@keyframes rainbow{
+  0% {background-color: red}
+  15% {background-color: orange;}
+  30% {background-color: yellow;}
+  45% {background-color: lime}
+  60% {background-color: blue}
+  75% {background-color: darkviolet}
+  90% {background-color: deeppink;}
+  100% {background-color: red;}
+}
+
 body{
-  background-color: rgb(222, 173, 235);
+  background-color: rgb(164, 105, 181);
+}
+
+h1{
+  animation-name: h1;
+  animation-duration: 2s;
+  font-family: 'Solitreo', cursive;
 }
 
 /* SECTION Classes */
 
-
+.myText{
+  color: white;
+  text-shadow: 1px 1px 6px black;
+}
 
 /* SECTION IDs */
 
+#top{
+  height: 14vh;
+}
+
+#centerpage{
+  height: 90vh;
+}
+
+#startGameButton{
+  height: 60px;
+  width: 140px;
+  border-radius: 10px;
+  animation-name: rainbow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  transition: 0.4s;
+}
+
+#startGameButton:hover{
+  transform: scale(1.1);
+}
