@@ -1,3 +1,5 @@
+
+
 export class Question{
   constructor(data){
     this.category = data.category
@@ -7,5 +9,9 @@ export class Question{
     this.incorrect_answers = data.incorrect_answers
   }
 
-
+  get QuestionTemplate(){
+    return `
+    
+    `
+  }
 }
