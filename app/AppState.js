@@ -10,6 +10,8 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/Question').Question[]} */
   questions = []
   
+  /** @type {import('./Models/Question').Question} */
+  question = null
 }
 
 export const appState = new Proxy(new AppState(), {
