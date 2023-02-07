@@ -58,3 +58,7 @@ h1{
 #startGameButton:hover{
   transform: scale(1.1);
 }
+
+#ui{
+  padding-top: 10em;
+}

@@ -25,32 +25,48 @@
         </div>
       </div>
       <div id="centerpage" class="row d-flex">
-        <div class="col-8 offset-2">
-          <div class="row">
-            <div class="col-8 offset-2 mt-5">
+        <!-- <div class="col-8 offset-2">
+          <div id="ui" class="row justify-content-center">
+            <div class="col-8 my-3">
               <div class="card">
-                <div class="card-body text-center">
-                  Question Placeholder
+                <div class="card-body text-center py-5 elevation-1">
+                  <h3>Question Placeholder</h3>
                 </div>
               </div>
             </div>
-            <div class="col-6">
-
+            <div class="col-5 my-3">
+              <div class="card selectable" onclick="app.questionsController.selectAnswer('${this.incorrect_answers[0]}')">
+                <div class="card-body text-center elevation-1">
+                  <h4>"Answer"</h4>
+                </div>
+              </div>
             </div>
-            <div class="col-6">
-
+            <div class="col-5 my-3">
+              <div id="`${this.correct_answer}`" class="card selectable" onclick="app.questionsController.selectAnswer('${this.correct_answer}')">
+                <div class="card-body text-center elevation-1">
+                  <h4>"Answer"</h4>
+                </div>
+              </div>
             </div>
-            <div class="col-6">
-
+            <div class="col-5 my-3">
+              <div class="card selectable" onclick="app.questionsController.selectAnswer('${this.incorrect_answers[1]}')">
+                <div class="card-body text-center elevation-1">
+                  <h4>"Answer"</h4>
+                </div>
+              </div>
             </div>
-            <div class="col-6">
-
+            <div class="col-5 my-3">
+              <div class="card selectable" onclick="app.questionsController.selectAnswer('${this.incorrect_answers[2]}')">
+                <div class="card-body text-center elevation-1">
+                  <h4>"Answer"</h4>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- <div class="col-12 d-flex justify-content-center align-items-center">
-          <button id="startGameButton" onclick="app.questionsController.startGame()" class="elevation-1">Start a Game!</button>
         </div> -->
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <button id="startGameButton" onclick="app.questionsController.startGame()" class="elevation-1">Start a Game!</button>
+        </div>
       </div>
     </div>
   </main>

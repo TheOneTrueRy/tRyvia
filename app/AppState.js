@@ -4,6 +4,9 @@ import { isValidProp } from "./Utils/isValidProp.js"
 import { loadState } from "./Utils/Store.js"
 
 class AppState extends EventEmitter {
+
+  score = 0
+
   /** @type {import('./Models/Value').Value[]} */
   values = loadState('values', [Value])
 
